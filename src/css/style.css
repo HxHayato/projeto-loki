@@ -245,7 +245,7 @@ main:after{
     .mobile {
         padding: 0 40px;
         background-color: #19191F;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 0;
         width: 100vw;
@@ -274,11 +274,11 @@ main:after{
     }
 
     .agora {
-        width: 60%;
+        width: 49%;
     }
 
     .trailer {
-        width: 35%;
+        width: 49%;
     }
 
     hr {
@@ -286,5 +286,9 @@ main:after{
         border-bottom: 2px;
     }
 
+    .descricao-mobile {
+        font-weight: 400;
+        font-size: 14px;
+    }
 
 }
