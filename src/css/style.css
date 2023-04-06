@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'B612', sans-serif;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main:after{
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.fundo img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.conteudo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.top p {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.top h1 {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.bot {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    margin-right: 5vw;
+    max-width: 40%;
+    min-height: 100%;
+    object-fit: cover;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.texto {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto .descricao {
+    max-width: 720px;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.duracao-star-ano {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.duracao {
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: baseline;
+    gap: 5px;
+}
+
+.duracao i {
+    height: 100%;
+    width: auto;
+}
+
+.star {
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ano {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.botoes {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.agora {
+    background-color: #0072D2;
+    color: #ffffff;
+    width: 180px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agora:hover {
+    background-color: #008cff;
+}
+
+.trailer {
+    background-color: #131318;
+    color: #ffffff;
+    width: 115px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.trailer:hover {
+    background-color: #2a2a35;
+}
+
+.trailer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.mobile {
+    display: none;
+}
+
+@media Screen and (max-width:1280px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media Screen and (max-width:617px) {
+    .banner {
+        display: none;
+    }
+
+    .texto {
+        max-width: 90%;
+    }
+    
+    .duracao-star-ano {
+        max-width: 90vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media Screen and (max-width:425px) { 
+    
+
+    main:after {
+        min-height: 72vh;
+    }
+
+    .conteudo {
+        min-height: 0;
+        height: 70vh;
+    }
+    .fundo img {
+        max-height: 72vh;
+    }
+
+    .descricao {
+        display: none;
+    }
+
+    .botoes {
+        display: none;
+    }
+
+    .duracao-star-ano {
+        gap: 5vw;
+    }
+
+    .mobile {
+        padding: 0 40px;
+        background-color: #19191F;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .conteudo-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .botoes-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .agora {
+        width: 60%;
+    }
+
+    .trailer {
+        width: 35%;
+    }
+
+    hr {
+        width: 100%;
+        border-bottom: 2px;
+    }
+
+
+}
