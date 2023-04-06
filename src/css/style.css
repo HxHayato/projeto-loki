@@ -216,10 +216,9 @@ main:after{
 }
 
 @media Screen and (max-width:425px) { 
-    
 
     main:after {
-        min-height: 72vh;
+        min-height: 70vh;
     }
 
     .conteudo {
@@ -227,7 +226,7 @@ main:after{
         height: 70vh;
     }
     .fundo img {
-        max-height: 72vh;
+        max-height: 70vh;
     }
 
     .descricao {
@@ -245,7 +244,7 @@ main:after{
     .mobile {
         padding: 0 40px;
         background-color: #19191F;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100vw;
